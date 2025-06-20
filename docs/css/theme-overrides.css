@@ -1,0 +1,72 @@
+:root {
+  /* Logo-green “F” circuitry */
+  --fw-accent-green: #8ce03d;
+
+  /* Magic-hat purple outline */
+  --fw-accent-purple: #9c27b0;
+
+  /* D20 / sword-hilt orange */
+  --fw-accent-orange: #ff9800;
+
+  /* Dark background behind the logo */
+  --fw-bg-dark: #121212;
+
+  --fw-text-light: #ddd;
+}
+
+html,
+body {
+  background-color: var(--fw-bg-dark) !important;
+}
+
+strong {
+  color: inherit;
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+}
+
+.wrapper {
+  background-color: var(--fw-bg-dark) !important;
+  box-shadow: none !important;
+}
+
+.wrapper,
+.wrapper p,
+.wrapper li,
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper a {
+  color: var(--fw-text-light) !important;
+}
+
+.wrapper > header > h1 > a {
+  color: var(--fw-accent-green) !important;
+}
+
+.wrapper > header > p.view > a {
+  color: var(--fw-accent-purple) !important;
+}
+.wrapper > header > p.view > a:hover {
+  color: var(--fw-accent-orange) !important;
+}
+
+.markdown-body pre,
+.markdown-body blockquote,
+.markdown-body table {
+  background-color: var(--fw-bg-dark) !important;
+  color: var(--fw-text-light) !important;
+}
+
+.wrapper > footer {
+  color: var(--fw-text-light) !important;
+}
+.wrapper > footer a {
+  color: var(--fw-accent-green) !important;
+}
+
+header img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
